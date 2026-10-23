@@ -27,6 +27,7 @@ public class SiakadWHILE27 {
             }
             if (nilai > 85 && nilai <=100) {
                 System.out.println("Nilai mahasiswa ke " + (i+1) + "adalah A");
+                System.out.println("Bagus, pertahankan nilainya");
                 
             }else if (nilai >73 && nilai<=85) {
                 System.out.println("Nilai mahasiswa ke " + (i+1) + "adalah B+");
