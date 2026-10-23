@@ -1,4 +1,4 @@
-
+package Jobsheet7;
 import java.util.Scanner;
 
 public class StudyCase1_27 {
@@ -9,7 +9,7 @@ public class StudyCase1_27 {
         int jumlahcup,uangBayar;
         int totalHarga;
         int totalBayar;
-        int diskon = 10;
+        int diskon = 8;
         int kembalian,kurang;
         System.out.println("Masukkan jumlah cup: ");
         jumlahcup = input.nextInt();
@@ -17,7 +17,7 @@ public class StudyCase1_27 {
         uangBayar = input.nextInt();
         totalHarga = jumlahcup * hargaperCup;
         if (totalHarga >= 100000) {
-            diskon = totalHarga * 10 / 100;
+            diskon = totalHarga * 8 / 100;
             totalBayar = totalHarga - diskon;
         } else {
            totalBayar = totalHarga - diskon; 
@@ -35,5 +35,7 @@ public class StudyCase1_27 {
             
         }
     }
-}
 
+    
+
+}
