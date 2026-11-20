@@ -5,15 +5,22 @@ import java.util.Scanner;
 public class Arrayratanilai27percobaan3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [] nilaimhs = new int[10];
+        int jumlah;
         int total = 0;
         double ratarata;
+        int lulus = 0;
+        System.out.println("Masukkan jumlah mahasiswa: ");
+        jumlah = sc.nextInt();
+        int [] nilaimhs= new int [jumlah];
         for (int i = 0; i < nilaimhs.length; i++) {
             System.out.println("Masukkan nilai mahasiswa ke " + (i+1));
             nilaimhs [i] = sc.nextInt();
             total += nilaimhs[i];
-            
+            if (nilaimhs [i] > 70) {
+            lulus ++;
         }
+        }
+        
         ratarata = (double) total / nilaimhs.length;
         System.out.println("Total nilai: " + total);
         System.out.println("Rata rata: " + ratarata);
@@ -41,6 +48,7 @@ public class Arrayratanilai27percobaan3 {
         if (ratarata <70) {
             System.out.println("Perlu pendampingan");
         }
+        System.out.println("Banyak nya yang lulus: " + lulus);
     }
     
 }
